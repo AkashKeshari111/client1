@@ -8,7 +8,7 @@ const Home = () => {
     const [data,setData]=useState();
 
     const getData=()=>{
-        axios.get("http://localhost:8080/").then((res) => {
+        axios.get("https://b1-bpbv.onrender.com/").then((res) => {
             setData(res.data)
             // console.log(res.data);
           });

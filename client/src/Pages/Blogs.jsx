@@ -9,7 +9,7 @@ const Blogs = () => {
     console.log(token)
 
     const getUserData=()=>{
-         axios.get("http://localhost:8080/blogs/all_blogs",{
+         axios.get("https://b1-bpbv.onrender.com/blogs/all_blogs",{
             headers:{
                 "token":`Bearer ${token}`
             }

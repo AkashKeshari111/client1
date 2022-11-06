@@ -11,7 +11,7 @@ const Signup = () => {
 
 
     const handleSignup=()=>{
-      axios.post("http://localhost:8080/users/signup",{
+      axios.post("https://b1-bpbv.onrender.com/users/signup",{
         name:text,
         email,
         password,

@@ -13,7 +13,7 @@ const Yourblogs = () => {
 
 
     const getYourData=()=>{
-        axios.get("http://localhost:8080/blogs/blog",{
+        axios.get("https://b1-bpbv.onrender.com/blogs/blog",{
             headers:{
                 "token":`Bearer ${token}`
             }
@@ -27,7 +27,7 @@ const Yourblogs = () => {
 
     const postYourData=(title,description)=>{
        
-        fetch("http://localhost:8080/blogs/blog",{
+        fetch("https://b1-bpbv.onrender.com/blogs/blog",{
             method:"POST",
             headers:{
                 'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const Yourblogs = () => {
 
 
     const deleteYourData=(id)=>{
-        axios.delete(`http://localhost:8080/blogs/blog/${id}`,{
+        axios.delete(`https://b1-bpbv.onrender.com/blogs/blog/${id}`,{
             headers:{
                 "token":`Bearer ${token}`
             }
@@ -56,7 +56,7 @@ const Yourblogs = () => {
 
 
     const updateYourData=(id)=>{
-          fetch(`http://localhost:8080/blogs/blog/${id}`,{
+          fetch(`https://b1-bpbv.onrender.com/blogs/blog/${id}`,{
         method:"PATCH",
         headers:{
             'Content-Type': 'application/json',

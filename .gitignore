@@ -1,3 +1,7 @@
 server/package-lock.json
 server/node_modules/
 server/.env
+.vercel
+
+# Local Netlify folder
+.netlify
